@@ -1,0 +1,49 @@
+.popup {
+      position: fixed;
+      inset: 0;                       /* top:0; left:0; right:0; bottom:0 */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.6);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .18s ease;
+      z-index: 9999;
+    }
+    /* visible state */
+    .popup.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* popup box */
+    .popup__box {
+      background: #fff;
+      width: 90%;
+      max-width: 560px;
+      border-radius: 8px;
+      padding: 20px 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      position: relative;
+      transform: translateY(10px);
+      transition: transform .18s ease;
+    }
+    .popup.is-visible .popup__box { transform: translateY(0); }
+
+    /* close button */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      background: transparent;
+      border: 0;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    /* make the link obvious */
+    #termsLink { color:black; cursor: pointer; text-decoration: none; }
+
+/* Pop Up button ends here */
+
+
