@@ -252,7 +252,7 @@
     productDetail.innerHTML = `
       <div class="col-md-4 p-md-4 mt-2">
         <!-- Carousel -->
-        <div id="carouselProduct" class="carousel slide">
+		<div id="carouselProduct" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="${product.image}" class="d-block w-100" alt="${product.name}">
@@ -312,4 +312,5 @@
 
 </body>
 </html>
+
 
