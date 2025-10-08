@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HAIQING CLASSIC TECH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="/images/Logo green.png" rel="icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  
+</head>
+<body class="goto-here">
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4" href="index.html">HAIQING <span class="text-primary">CLASSIC </span></a>
+  </div>
+</nav>
+  <!-- END nav -->
+
+  
+<!-- List Section -->
+  <section class="py-3">
+    <div class="container">
+      <div class="row" id="productDetail">
+        <!-- JS will inject product details here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- List Section -->
+   <section class="py-3">
+   <div class="container">
+<ul class="list-group" id="infoList">
+  <li class="list-group-item" data-target="logistics">
+    <i class="bi bi-truck"></i>
+    <span>Secure Logistics</span>
+  </li>
+  <li class="list-group-item" data-target="warranty">
+    <i class="bi bi-shield-check"></i>
+    <span>Warranty Policy</span>
+  </li>
+  <li class="list-group-item" data-target="support">
+    <i class="bi bi-headset"></i>
+    <span>Customer Support</span>
+  </li>
+  <li class="list-group-item" data-target="payment">
+    <i class="bi bi-credit-card"></i>
+    <span>Payment Methods</span>
+  </li>
+</ul>
+
+</div>
+</section>
+
+<!-- Bottom Modal -->
+<div id="infoModal" class="info-modal">
+  <div class="info-content shadow-lg">
+    <button class="close-btn" id="closeModal">&times;</button>
+    <div id="modalDetails"></div>
+  </div>
+</div>
+
+
+<!-- Footer Section -->
+<footer class="bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container">
+    <!-- Social Icons -->
+    <div class="text-center mb-4">
+      <a href="#" class="text-light mx-2 fs-5"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-light mx-2 fs-5"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-light mx-2 fs-5"><i class="bi bi-telegram"></i></a>
+      <a href="#" class="text-light mx-2 fs-5"><i class="bi bi-youtube"></i></a>
+      <a href="#" class="text-light mx-2 fs-5"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="text-light mx-2 fs-5"><i class="bi bi-tiktok"></i></a>
+    </div>
+
+    <!-- Footer Sections -->
+    <div class="row" id="footerContent">
+      <!-- Customer Service -->
+      <div class="col-12 col-md-3 mb-4">
+        <div class="footer-section">
+          <h5 class="fw-semibold mb-3 d-none d-md-block">Customer Service</h5>
+          <button class="accordion-button collapsed bg-dark text-light border-0 p-0 d-md-none" 
+                  type="button" data-bs-toggle="collapse" data-bs-target="#customerService"
+                  aria-expanded="false">
+            Customer Service
+          </button>
+          <div id="customerService" class="collapse d-md-block">
+            <ul class="list-unstyled mt-2 small">
+              <li><strong>Service Hours:</strong><br>Monday–Friday 9AM–6PM</li>
+              <li class="mt-2"><strong>Phone:</strong><br>09159576184</li>
+              <li class="mt-2"><strong>Email:</strong><br>
+                care.ng@oraimo.com<br>
+                deliveryissue.ng@oraimo.com <span class="text-secondary">(Logistics Issue)</span>
+              </li>
+              <li class="mt-2"><strong>WhatsApp:</strong><br>+234 916 459 8060 / +234 818 642 3337</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div class="col-12 col-md-3 mb-4">
+        <div class="footer-section">
+          <h5 class="fw-semibold mb-3 d-none d-md-block">About oraimo</h5>
+          <button class="accordion-button collapsed bg-dark text-light border-0 p-0 d-md-none" 
+                  type="button" data-bs-toggle="collapse" data-bs-target="#aboutUs"
+                  aria-expanded="false">
+            About oraimo
+          </button>
+          <div id="aboutUs" class="collapse d-md-block">
+            <ul class="list-unstyled mt-2 small">
+              <li><a href="#" class="text-secondary text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Where to Buy</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">O-CLUB</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Explorer Point Program</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Blogs</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Terms -->
+      <div class="col-12 col-md-3 mb-4">
+        <div class="footer-section">
+          <h5 class="fw-semibold mb-3 d-none d-md-block">Terms</h5>
+          <button class="accordion-button collapsed bg-dark text-light border-0 p-0 d-md-none" 
+                  type="button" data-bs-toggle="collapse" data-bs-target="#terms"
+                  aria-expanded="false">
+            Terms
+          </button>
+          <div id="terms" class="collapse d-md-block">
+            <ul class="list-unstyled mt-2 small">
+              <li><a href="#" class="text-secondary text-decoration-none">Warranty</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Shipping & Delivery</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Return & Refund Policy</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Terms & Conditions</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Get Help -->
+      <div class="col-12 col-md-3 mb-4">
+        <div class="footer-section">
+          <h5 class="fw-semibold mb-3 d-none d-md-block">Get Help</h5>
+          <button class="accordion-button collapsed bg-dark text-light border-0 p-0 d-md-none" 
+                  type="button" data-bs-toggle="collapse" data-bs-target="#getHelp"
+                  aria-expanded="false">
+            Get Help
+          </button>
+          <div id="getHelp" class="collapse d-md-block">
+            <ul class="list-unstyled mt-2 small">
+              <li><a href="#" class="text-secondary text-decoration-none">Track Order</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Visit Carlcare</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Contact Us</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Online Shopping Guide</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Product Authentication</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="text-center text-secondary small mt-4 pt-3 border-top border-secondary">
+      &copy; 2020 – 2025 Haiqing Classic Technology.<br> All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+  <!-- Scripts -->
+ 
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const productId = parseInt(urlParams.get("id"));
+  const product = products.find(p => p.id === productId);
+  const productDetail = document.getElementById("productDetail");
+
+  if (product) {
+    productDetail.innerHTML = `
+      <div class="col-md-4 p-md-6 mt-2">
+        <!-- Carousel -->
+		<div id="carouselProduct" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="${product.image}" class="d-block w-100" alt="${product.name}">
+            </div>
+            ${product.extraImages ? product.extraImages.map((img, i) => `
+              <div class="carousel-item">
+                <img src="${img}" class="d-block w-100" alt="${product.name} image ${i+1}">
+              </div>
+            `).join('') : ""}
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- VIDEO COLUMN (YouTube Embed) -->
+<div class="col-md-4 p-md-6">
+  <div class="section-title-box">
+    <h4 class="section-title text-light">Product Highlight</h4>
+  </div>
+
+  ${product.video ? `
+    <div class="ratio ratio-16x9">
+      <iframe
+        class="d-block w-100 rounded-3 shadow-sm"
+        src="${product.video}"
+        title="Product Highlight Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  ` : `<p class="text-muted">No video available</p>`}
+
+
+
+      <!-- PRODUCT INFO -->
+      <div class="">
+        <div class="section-title-box">
+        <h4 class="section-title text-light">${product.name}</h4>
+        </div>
+        <p>
+          <span class="fw-bold text-success fs-4">&#8358;${product.price}</span>
+          <span class="text-decoration-line-through text-secondary">&#8358;${product.oldPrice}</span>
+        </p>
+        <span class="badge bg-success">${product.discount} OFF</span>
+        <p class="mt-2">${product.description}</p>
+
+        <a href="https://wa.me/2349159576184?text=Hey! I want to buy ${encodeURIComponent(product.name)} at ₦${product.price} per pcs" 
+          class="btn btn-success btn-lg mt-1" target="_blank">
+          <i class="ion-social-whatsapp"></i> Buy on WhatsApp
+        </a>
+      </div>
+      </div>
+
+         <!-- PRODUCT PARAMETERS -->
+      <div class="col-md-4 p-md-6">
+        <div class="section-title-box">
+        <h4 class="section-title text-light">Product parameter</h4>
+        </div>
+  <table class="specs-table">
+    <tbody>
+      <tr>
+        <th>Bluetooth Version</th>
+        <td>V5.4</td>
+      </tr>
+      <tr>
+        <th>Playtime</th>
+        <td>30 Hours</td>
+      </tr>
+      <tr>
+        <th>Charging Time</th>
+        <td>2 Hours</td>
+      </tr>
+      <tr>
+        <th>Driver Size</th>
+        <td>10mm</td>
+      </tr>
+      <tr>
+        <th>Transmission Distance</th>
+        <td>10m</td>
+      </tr>
+      <tr>
+        <th>Waterproof</th>
+        <td>IPX4</td>
+      </tr>
+      <tr>
+        <th>Material</th>
+        <td>PC + ABS</td>
+      </tr>
+      <tr>
+        <th>Color</th>
+        <td>Speed Black, Mystery Blue, Green, Light Gold</td>
+      </tr>
+      <tr>
+        <th>Model Name</th>
+        <td>OTW-323</td>
+      </tr>
+      <tr>
+        <th>Market Name</th>
+        <td>SpaceBuds Neo</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    `;
+  } else {
+    productDetail.innerHTML = `<p>Product not found.</p>`;
+  }
+</script>
+
+</body>
+</html>
+
+
