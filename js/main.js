@@ -81,7 +81,7 @@ document.getElementById("cartIcon").addEventListener("click", function (e) {
 });
 
 // === Countdown Timer ===
-const endDate = new Date("2025-10-23T23:59:59").getTime();
+const endDate = new Date("2025-10-31T23:59:59").getTime();
 const timer = setInterval(() => {
   const now = new Date().getTime();
   const distance = endDate - now;
@@ -261,5 +261,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // === Footer Year ===
 document.getElementById("currentYear").textContent = new Date().getFullYear();
+
 
 
