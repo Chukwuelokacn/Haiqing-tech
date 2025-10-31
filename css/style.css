@@ -631,12 +631,22 @@ footer .row {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
   background: #000;
 }
+
 .video-frame {
   width: 320px;
   max-width: 100%;
   aspect-ratio: 16/9;
   border: none;
   display: block;
+}
+.video-title {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 6px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .carousel-3d-item p {
   color: #fff;
@@ -728,3 +738,4 @@ footer .row {
   background-color: #e27f00 !important;
   border-color: #e27f00 !important;
 }
+
